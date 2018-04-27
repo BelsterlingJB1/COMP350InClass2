@@ -20,9 +20,9 @@
 CXXFLAGS=-std=c++11 -fprofile-arcs -ftest-coverage -g
 
 test: balanced.o
-	g++ $(CXXFLAGS) std=c++11 *.o balancedTest.cpp -o balancedTest
+	g++ $(CXXFLAGS) *.o balancedTest.cpp -o balancedTest
 	./balancedTest
 
 balanced.o:
-	g++ $(CXXFLAGS)-std=c++11 -c balanced.cpp -o balanced.o
+	g++ $(CXXFLAGS) -c balanced.cpp -o balanced.o
 
