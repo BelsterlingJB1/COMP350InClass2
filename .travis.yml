@@ -4,7 +4,7 @@ script: make && make test
 #could add more notifications here.
 
 before_install:
-  -pip install --user cpp-coveralls
+  - pip install --user cpp-coveralls
   
 after_success:
-  -coveralls --include "balanced.cpp" --gcov-options '\-lp'
+  - coveralls --include "balanced.cpp" --gcov-options '\-lp'
